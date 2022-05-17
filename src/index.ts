@@ -50,7 +50,7 @@ app.post('/api/upload', (req, res) => {
       return res.status(401).send('Access token is required')
     }
   
-    if(req.headers['auth'] !== "Bungholio8102") return res.status(401).send('Invalid Token')
+    if(req.headers['auth'] !== ${{ 'key' }}) return res.status(401).send('Invalid Token')
   
     // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
   
